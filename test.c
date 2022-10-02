@@ -1,42 +1,34 @@
-#include"test.h"
-#include<string.h>
+#include"game.h"
+//猜数字游戏
+//1.电脑生成一个随机数字。2.猜数字（猜错会提示猜大或猜小）可重复出现
 int main()
 {
-	/*int count = 0;
-	int year = 0;
-	printf("1000-2000的闰年是：");
-	for (year = 1000; year <= 2000; year++)
-	{
-		if (1 == is_leap_year(year))
-		{
-			printf("%d年 ", year);
-			count++;
-		}
-	}
-	printf("有%d个闰年\n", count);*/
 
-	//二分法查找
-	/*int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
-	int k = 0;
-	printf("请输入要查找的值\n");
-	scanf("%d", &k);
-	int sz = sizeof(arr) / sizeof(arr[0]);
-	binary_search(arr,k, sz);*/
+	////time返回的time_t是long整形，所以可以加上unsigned。时间戳：当前计算机时间-计算机起止时间1970.1.1.0:0:0
+	//srand((unsigned)time(NULL));//由于只是用一次所以放在主函数中就可以。时间戳time(NULL)引用头文件timel.h
+	//
+	//
+	//int input = 0;
+	//do
+	//{
+	//	menu();
+	//	scanf("%d",&input);//这里如果加\n则导致输入的第一个数字不能被input读取。只有换行再输入一个数字第一个数字才被input读取
+	//	switch (input)
+	//	{
+	//	case 1:
+	//		game();
+	//		break;
+	//	case 0:
+	//		printf("退出游戏\n");
+	//		break;
+	//	default:
+	//		printf("输入错误\n");
+	//		break;
+	//	}
+	//	
+	//} 
+	//while (input);
+	//return 0;
+	//
 
-	//每调用一次num+1
-	//int num = 0;
-	//Add(&num);
-	//printf("%d\n", num);//调用一次后num加一
-	//Add(&num);
-	//printf("%d\n", num);//调用两次num=2
-
-	//链式访问
-	//char arr[] = "abc";
-	//int len = strlen(arr);
-	//printf("%d\n", len);//打印字符窜长度
-	//printf("%d",strlen(arr));//链式访问
-	//printf("%d", 43);
-	//printf("%d", printf("%d", printf("%d", 43))); //返回1
-	
-	
 }
