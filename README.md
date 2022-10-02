@@ -1,2 +1,2 @@
-# test.lianxi
+# My C
 This is an exercise projict
